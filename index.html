@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравление</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .quote-mark {
+            font-size: 60px;
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .quote-text {
+            font-size: 22px;
+            font-style: italic;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-author {
+            margin-top: 15px;
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 600;
+        }
+
+        .gift-section {
+            margin-top: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border: 2px dashed #667eea;
+        }
+
+        .gift-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .gift-title {
+            color: #667eea;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        button {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .hint {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .quote-text {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🎓✨</div>
+        
+        <h1>Поздравляю, дорогой племянник!</h1>
+        
+        <div class="quote-box">
+            <div class="quote-mark">"</div>
+            <div class="quote-text">
+                Лучшая инвестиция — это знания,<br>
+                их дивиденды не облагаются налогом
+            </div>
+            <div class="quote-author">— Бенджамин Франклин</div>
+        </div>
+
+        <p style="color: #555; font-size: 18px; line-height: 1.6; margin: 20px 0;">
+            Вкладывай в себя, учись новому, развивайся — это единственная инвестиция, 
+            которая всегда принесет тебе прибыль!
+        </p>
+
+        <div class="gift-section">
+            <div class="gift-icon">🎁</div>
+            <div class="gift-title">Для тебя есть подарок!</div>
+            
+            <a href="https://disk.yandex.ru/d/GRCIOadC9vMhxA" target="_blank" style="text-decoration: none;">
+                <button style="margin-top: 20px;">Открыть подарок</button>
+            </a>
+            
+            <div class="hint" style="margin-top: 20px;">💡 Подсказка: пароль — это твой год рождения</div>
+        </div>
+
+        <div class="footer">
+            С любовью и верой в твоё успешное будущее! 💙
+        </div>
+    </div>
+</body>
+</html>
